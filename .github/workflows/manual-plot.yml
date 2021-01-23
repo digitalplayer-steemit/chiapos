@@ -1,27 +1,27 @@
 name: Manual Plot
 
-on:
-  workflow_dispatch:
-    inputs:
-      upstream_branch:
-        description: 'chia pos branch name to use'
-        required: true
-        default: 'master'
-      instance_name_tag:
-        description: 'name tag to apply to new instance'
-        required: true
-        default: 'chia-test-orphan'
-      commit_sha:
-        description: 'commit sha to pull other than head'
-        required: false
-      count:
-        description: 'How many instances should plot?'
-        required: true
-        default: '1'
-      k_size:
-        description: 'The K size to plot'
-        required: true
-        default: '27'
+on: [workflow_dispatch]
+  #workflow_dispatch:
+    #inputs:
+      #upstream_branch:
+        #description: 'chia pos branch name to use'
+        #required: true
+        #default: 'master'
+      #instance_name_tag:
+      #  description: 'name tag to apply to new instance'
+      #  required: true
+      #  default: 'chia-test-orphan'
+      #commit_sha:
+      #  description: 'commit sha to pull other than head'
+      #  required: false
+      #count:
+      #  description: 'How many instances should plot?'
+      #  required: true
+      #  default: '1'
+      #k_size:
+      #  description: 'The K size to plot'
+      #  required: true
+      #  default: '27'
 
 jobs:
   build_wheels:
