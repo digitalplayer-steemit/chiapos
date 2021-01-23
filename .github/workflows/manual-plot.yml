@@ -3,6 +3,10 @@ name: Manual Plot
 on:
   workflow_dispatch:
     inputs:
+      k_size:
+        description: 'The K size to plot'
+        required: true
+        default: '27'
       upstream_branch:
         description: 'chia pos branch name to use'
         required: true
