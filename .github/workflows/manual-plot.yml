@@ -22,10 +22,6 @@ on:
         description: 'How many instances should plot?'
         required: true
         default: '1'
-      k_size:
-        description: 'The K size to plot'
-        required: true
-        default: '27'
 
 jobs:
   build_wheels:
